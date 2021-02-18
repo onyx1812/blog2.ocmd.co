@@ -26,7 +26,11 @@ add_theme_support( 'menus' );
 add_theme_support( 'post-thumbnails' );
 
 function front_scripts() {
-  wp_enqueue_style( 'styles', get_template_directory_uri().'/css/styles.css');
+  if( is_404() ){
+    wp_enqueue_style( 'styles', get_template_directory_uri().'/css/styles-404.css');
+  } else {
+    wp_enqueue_style( 'styles', get_template_directory_uri().'/css/styles.css');
+  }
 }
 add_action( 'wp_enqueue_scripts', 'front_scripts' );
 
