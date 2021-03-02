@@ -28,6 +28,8 @@ add_theme_support( 'post-thumbnails' );
 function front_scripts() {
   if( is_404() ){
     wp_enqueue_style( 'styles', get_template_directory_uri().'/css/styles-404.css');
+  } else if( is_page_template( 'templates/page-blog.php' ) ){
+    wp_enqueue_style( 'styles', get_template_directory_uri().'/css/styles-blog.css');
   } else {
     wp_enqueue_style( 'styles', get_template_directory_uri().'/css/styles.css');
   }
