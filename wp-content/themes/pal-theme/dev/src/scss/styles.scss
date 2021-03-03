@@ -1,6 +1,11 @@
 @import 'variables/colors';
 @import 'base/all';
 
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+html, body{
+  font-family: 'Work Sans', sans-serif;
+}
+
 @import 'partials/main-header';
 @import 'partials/main-footer';
 
@@ -105,9 +110,6 @@ img.post-img {
     @media(min-width:992px){
       font-size: 28px;
     }
-    @media(min-width:1200px){
-      font-size: 32px;
-    }
     a{
       text-decoration: none;
       color: #000;
@@ -120,9 +122,6 @@ img.post-img {
       margin: 0;
       @media(min-width:768px){
         font-size: 18px;
-      }
-      @media(min-width:1200px){
-        font-size: 22px;
       }
     }
   }
