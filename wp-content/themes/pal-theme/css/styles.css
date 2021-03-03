@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -802,6 +803,9 @@ p {
 .text-right img, .text-left img, .text-center img {
   display: inline-block; }
 
+html, body {
+  font-family: 'Work Sans', sans-serif; }
+
 .main-header {
   padding-top: 15px; }
   @media (min-width: 768px) {
@@ -1325,9 +1329,6 @@ img.post-img {
     @media (min-width: 992px) {
       .posts h2 {
         font-size: 28px; } }
-    @media (min-width: 1200px) {
-      .posts h2 {
-        font-size: 32px; } }
     .posts h2 a {
       text-decoration: none;
       color: #000; }
@@ -1339,9 +1340,6 @@ img.post-img {
       @media (min-width: 768px) {
         .posts .excerpt p {
           font-size: 18px; } }
-      @media (min-width: 1200px) {
-        .posts .excerpt p {
-          font-size: 22px; } }
   .posts .read-more {
     background: #e6beaf;
     color: #fff;
