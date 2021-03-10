@@ -1397,8 +1397,7 @@ p {
             transform: scale(1.1); }
   @media (max-width: 768px) {
     .btn-video {
-      margin-bottom: 30px;
-      width: 100%; } }
+      margin-bottom: 30px; } }
 
 .video-wrap {
   background: #FFFFFF;
