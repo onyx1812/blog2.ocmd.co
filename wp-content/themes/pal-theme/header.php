@@ -64,5 +64,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <header class="main-header">
       <div class="container">
         <a target="_blank" href="https://ocmd.co" title="Blog | OCMD LLC"><img src="<?php echo IMG.'/logo.svg'; ?>" alt="" class="logo logo-post" width="160px"></a>
+        <?php if( is_page_template( 'templates/page-blog_fb.php' ) ): ?>
+        <button class="nav-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav-top nav-top-hide">
+          <ul>
+            <li><a href="#" class="openPopup" data-popup="terms">Terms</a></li>
+            <li><a href="#" class="openPopup" data-popup="privacy">Privacy</a></li>
+            <li><a href="#" class="openPopup" data-popup="citations">Citations</a></li>
+          </ul>
+        </nav>
+      <?php endif; ?>
       </div>
     </header>

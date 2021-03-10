@@ -1,0 +1,238 @@
+@import 'variables/colors';
+@import 'base/all';
+
+@import 'partials/main-header';
+@import 'partials/main-footer';
+
+@import 'partials/popup';
+
+.main-header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  .container{
+    position: relative;
+  }
+}
+
+.nav-btn{
+  width: 30px;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translate(0, -50%);
+  span{
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #FE6F61;
+    &:not(:first-child){
+      margin-top: 6px;
+    }
+  }
+  &:hover{
+    opacity: .9;
+  }
+}
+
+.nav-top{
+  position: absolute;
+  right: 0;
+  z-index: 999;
+  text-align: right;
+  background: #fff;
+  top: 100%;
+  width: 250px;
+  padding: 20px;
+  transition: opacity .5s ease;
+  box-shadow: -8px 8px 16px rgba(0, 0, 0, .4);
+  a{
+    font-size: 22px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #FE6F61;
+  }
+  li{
+    &:not(:first-child){
+      margin-top: 15px;
+    }
+  }
+  &-hide{
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.main-footer{
+  display: none !important;
+}
+
+.content{
+  padding-top: 90px;
+  padding-bottom: 30px;
+  background: url('../img/bg.jpg') no-repeat top center/100% auto;
+  @media(min-width:768px){
+    padding-top: 160px;
+    padding-bottom: 30px;
+  }
+}
+
+
+
+.btn-video{
+  display: block;
+  margin: 30px auto 0;
+  width: 280px;
+  background: url('../img/btn-icon.png') no-repeat 15px center, linear-gradient(180deg, #FFCF81 0%, #FF9D00 100%);
+  padding: 21px 20px 21px 75px;
+  border-radius: 8px;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 30px;
+  color: #000000;
+  text-decoration: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s ease;
+  &:hover{
+    transform: scale(1.1);
+  }
+  @media(max-width:768px){
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  &-show{
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.video-wrap{
+  background: #FFFFFF;
+  box-shadow: 0px 0px 33px rgba(0, 0, 0, 0.11);
+  padding: 10px;
+  @media(min-width:768px){
+    padding: 30px;
+  }
+  img{
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  h3{
+    font-family: Work Sans;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FE6F61;
+    margin-bottom: 15px;
+    &:after{
+      margin-top: 15px;
+      content:"";
+      width: 37px;
+      height: 2px;
+      background: #FE6F61;
+      display: block;
+    }
+  }
+  p{
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 140%;
+    color: #474747;
+  }
+}
+
+.steps{
+  max-width: 1078px;
+  margin: 30px auto;
+  @media(min-width:768px){
+    margin: 60px auto;
+  }
+  li{
+    padding: 30px 0;
+    display: flex;
+    align-items: flex-start;
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 140%;
+    color: #474747;
+    @media(min-width:768px){
+      padding: 30px;
+    }
+  }
+  img{
+    display: block;
+    width: 84px;
+    max-width: 84px;
+    margin-right: 20px;
+  }
+}
+
+.description{
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  h2{
+    font-family: Work Sans;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FE6F61;
+    margin-bottom: 40px;
+  }
+  p{
+    font-family: Montserrat;
+    font-size: 18px;
+    line-height: 140%;
+    color: #474747;
+    margin-bottom: 60px;
+  }
+  img{
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  h5{
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #474747;
+    margin-bottom: 30px;
+  }
+  .col-6{
+    @media(min-width:768px){
+      padding-left: 45px;
+      padding-right: 45px;
+    }
+  }
+}
+
+.fb-footer{
+  background: #FFF8F6;
+  text-align: center;
+  padding: 30px 0;
+  @media(min-width:768px){
+    padding: 60px 0;
+  }
+  p{
+    margin-bottom: 30px;
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 140%;
+    text-align: center;
+    color: #474747;
+    a{
+      color: #474747;
+      text-decoration: none;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}

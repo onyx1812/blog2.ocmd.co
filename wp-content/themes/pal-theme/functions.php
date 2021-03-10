@@ -30,6 +30,9 @@ function front_scripts() {
     wp_enqueue_style( 'styles', get_template_directory_uri().'/css/styles-404.css');
   } else if( is_page_template( 'templates/page-blog.php' ) ){
     wp_enqueue_style( 'styles', get_template_directory_uri().'/css/styles-blog.css');
+  } else if( is_page_template( 'templates/page-blog_fb.php' ) ){
+    wp_enqueue_style( 'styles', get_template_directory_uri().'/css/styles-blog_fb.css');
+    wp_enqueue_script( 'scripts', get_template_directory_uri() . '/js/scripts-blog_fb.js', false, false, 'in_footer');
   } else {
     wp_enqueue_style( 'styles', get_template_directory_uri().'/css/styles.css');
   }
