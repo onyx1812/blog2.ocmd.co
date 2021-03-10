@@ -1390,10 +1390,8 @@ p {
   font-size: 30px;
   color: #000000;
   text-decoration: none;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: opacity .3s ease;
-  transition: opacity .3s ease; }
+  -webkit-transition: .3s ease;
+  transition: .3s ease; }
   .btn-video:hover {
     -webkit-transform: scale(1.1);
             transform: scale(1.1); }
@@ -1401,9 +1399,6 @@ p {
     .btn-video {
       margin-bottom: 30px;
       width: 100%; } }
-  .btn-video-show {
-    opacity: 1;
-    visibility: visible; }
 
 .video-wrap {
   background: #FFFFFF;
