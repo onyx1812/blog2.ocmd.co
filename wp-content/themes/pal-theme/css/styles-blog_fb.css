@@ -1275,12 +1275,15 @@ p {
             transform: translate(0, 25vh);
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
-    padding: 30px 15px;
+    padding: 60px 15px 30px 15px;
     position: relative;
     background: #fff;
     width: 100%;
     margin-left: auto;
     margin-right: auto; }
+    @media (min-width: 768px) {
+      .popup--inner {
+        padding: 30px 15px; } }
   .popup #closePopup {
     position: absolute;
     right: 15px;

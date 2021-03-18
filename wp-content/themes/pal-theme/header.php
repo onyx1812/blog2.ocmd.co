@@ -11,7 +11,7 @@
     <meta name="author" content="MaxGloba">
     <meta name="theme-color" content="#ffffff">
 
-    <title><?php wp_title( '|', true, 'right' ); echo get_bloginfo('name'); ?></title>
+    <title><?php echo get_bloginfo('name'); ?></title>
 
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.ico?v=1.00" />
 
