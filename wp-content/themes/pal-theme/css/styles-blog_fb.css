@@ -1247,6 +1247,10 @@ p {
   visibility: hidden;
   opacity: 0;
   font-size: 14px; }
+  .popup h1 {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 30px; }
   .popup h2 {
     font-weight: 700;
     font-size: 18px;
@@ -1509,3 +1513,6 @@ p {
       text-decoration: none; }
     .fb-footer p:last-child {
       margin-bottom: 0; }
+
+.popup h2 {
+  margin-bottom: 10px; }

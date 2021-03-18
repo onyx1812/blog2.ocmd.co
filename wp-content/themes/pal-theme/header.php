@@ -74,7 +74,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <ul>
             <li><a href="#" class="openPopup" data-popup="terms">Terms</a></li>
             <li><a href="#" class="openPopup" data-popup="privacy">Privacy</a></li>
-            <li><a href="#" class="openPopup" data-popup="citations">Citations</a></li>
+            <!-- <li><a href="#" class="openPopup" data-popup="citations">Citations</a></li> -->
           </ul>
         </nav>
       <?php endif; ?>
